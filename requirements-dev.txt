@@ -1,0 +1,28 @@
+# Development dependencies
+-r requirements.txt
+
+# Jupyter related packages
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipykernel>=6.0.0
+jupytext>=1.16.0
+notebook>=7.0.0
+ipython>=8.0.0
+nbformat>=5.0.0
+
+# Development tools
+black>=23.0.0
+isort>=5.0.0
+pytest>=7.0.0
+mypy>=1.0.0
+
+# Plotting
+matplotlib>=3.10
+plotly>=5.18.0
+folium>=0.14.0  # For map visualizations
+
+# Additional development tools
+jupyter-ai[all]>=2.0.0
+jupytext>=1.16.7
+flake8>=6.0.0
+pytest-cov>=4.0.0 
