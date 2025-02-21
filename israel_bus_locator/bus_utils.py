@@ -197,6 +197,7 @@ def plot_distances_for_rides(
             Defaults to (32.090260, 34.782621).
     """
     from matplotlib import pyplot as plt
+
     plt.figure(figsize=(12, 8))
 
     for i, df in enumerate(ride_dfs):
