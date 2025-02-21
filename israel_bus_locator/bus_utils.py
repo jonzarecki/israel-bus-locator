@@ -126,6 +126,8 @@ def get_routes_for_route_mkt(
             {"route_mkt": route_mkt, "date_from": date_from, "date_to": date_to},
         )
     )
+    if routes_df.empty:
+        return pd.DataFrame()
 
     if filter_name:
         routes_df = routes_df[
