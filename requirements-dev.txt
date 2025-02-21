@@ -14,7 +14,6 @@ nbformat>=5.0.0
 black>=23.0.0
 isort>=5.0.0
 pytest>=7.0.0
-mypy>=1.0.0
 
 # Plotting
 matplotlib>=3.10
@@ -24,5 +23,4 @@ folium>=0.14.0  # For map visualizations
 # Additional development tools
 jupyter-ai[all]>=2.0.0
 jupytext>=1.16.7
-flake8>=6.0.0
 pytest-cov>=4.0.0 

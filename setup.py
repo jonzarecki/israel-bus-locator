@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="israel_bus_locator",
@@ -12,4 +12,4 @@ setup(
     author="Jon Zarecki",
     description="Python package for exploring Israel bus location data",
     python_requires=">=3.8",
-) 
+)
