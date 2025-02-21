@@ -23,13 +23,11 @@ clean:  ## Clean up python cache files
 	find . -type d -name ".mypy_cache" -exec rm -rf {} +
 	rm -rf .venv
 
-format:  ## Format code using black and isort
-	. .venv/bin/activate && black . --exclude .venv
-	. .venv/bin/activate && isort . --skip .venv
+format:  ## Format code using black
+	. .venv/bin/activate && PYTHONPATH=. black . --exclude ".venv/|\.eggs|\.git|\.hg|\.mypy_cache|\.nox|\.tox|\.venv|\.svn|_build|buck-out|build|dist"
 
 lint:  ## Run linting checks
-	. .venv/bin/activate && black . --check --exclude .venv
-	. .venv/bin/activate && isort . --check --skip .venv
+	. .venv/bin/activate && PYTHONPATH=. black . --check --exclude ".venv/|\.eggs|\.git|\.hg|\.mypy_cache|\.nox|\.tox|\.venv|\.svn|_build|buck-out|build|dist"
 
 test:  ## Run tests with coverage
 	. .venv/bin/activate && pytest --cov=. --cov-report=term-missing

@@ -8,14 +8,16 @@ import pandas as pd
 import pytest
 from dateutil import tz
 
-from israel_bus_locator.bus_utils import (calculate_distance_to_point,
-                                          create_enhanced_bus_locations_map,
-                                          get_current_distances_to_ref,
-                                          get_routes_for_route_mkt,
-                                          get_vehicle_locations,
-                                          localize_dates,
-                                          plot_distances_for_rides,
-                                          split_by_ride_id)
+from israel_bus_locator.bus_utils import (
+    calculate_distance_to_point,
+    create_enhanced_bus_locations_map,
+    get_current_distances_to_ref,
+    get_routes_for_route_mkt,
+    get_vehicle_locations,
+    localize_dates,
+    plot_distances_for_rides,
+    split_by_ride_id,
+)
 
 
 @pytest.fixture

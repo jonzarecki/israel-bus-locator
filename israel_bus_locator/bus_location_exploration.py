@@ -23,6 +23,7 @@ import sys
 from pprint import PrettyPrinter
 
 import folium
+
 # %%
 # Imports and setup
 import IPython
