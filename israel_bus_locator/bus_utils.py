@@ -127,7 +127,7 @@ def get_routes_for_route_mkt(
         )
     )
     if routes_df.empty:
-        return pd.DataFrame()
+        return routes_df
 
     if filter_name:
         routes_df = routes_df[
