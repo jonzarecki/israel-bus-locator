@@ -1,11 +1,9 @@
 import datetime
 from typing import Dict, List, Optional, Tuple, Union
 
-import folium
 import pandas as pd
 import stride
 from dateutil import tz
-from matplotlib import pyplot as plt
 
 
 def localize_dates(
@@ -24,6 +22,8 @@ def localize_dates(
 
 def create_enhanced_bus_locations_map(locations_df):
     """Create an enhanced map visualization"""
+    import folium
+
     # Calculate the center of the map (mean of coordinates)
     center_lat = locations_df["lat"].mean()
     center_lon = locations_df["lon"].mean()
@@ -196,6 +196,7 @@ def plot_distances_for_rides(
         ref_point (Tuple[float, float], optional): Reference point (lat, lon).
             Defaults to (32.090260, 34.782621).
     """
+    from matplotlib import pyplot as plt
     plt.figure(figsize=(12, 8))
 
     for i, df in enumerate(ride_dfs):
