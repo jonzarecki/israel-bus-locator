@@ -5,3 +5,7 @@ numpy>=1.24.0
 requests>=2.31.0 
 python-dateutil>=2.8.2
 open-bus-stride-client
+
+# Plotting dependencies
+matplotlib>=3.10
+folium>=0.15.0
