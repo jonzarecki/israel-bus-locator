@@ -13,8 +13,7 @@ def localize_dates(
 ) -> pd.DataFrame:
     if dt_columns is None:
         dt_columns = []
-    if not isinstance(data, pd.DataFrame):
-        raise ValueError("data must be a pandas DataFrame")
+        
     if data.empty:
         return data
     data = data.copy()

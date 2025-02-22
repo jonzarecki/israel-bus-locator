@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="israel_bus_locator",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(),
     install_requires=[
         line.strip()
