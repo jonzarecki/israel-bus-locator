@@ -280,6 +280,7 @@ def get_current_distances_to_ref(
             ),
             "last_update": latest["recorded_at_time"],
             "vehicle_ref": latest["siri_ride__vehicle_ref"],
+            "distance_from_journey_start": latest["distance_from_journey_start"],
             "lat": latest["lat"],
             "lon": latest["lon"],
         }
